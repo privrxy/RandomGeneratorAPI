@@ -1,0 +1,335 @@
+* {
+    user-select: none;
+    margin: 0px;
+  }
+
+header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.637);
+    min-height: 200px;
+    width: 100%;
+    line-height: 200px;
+    font-size: 50px;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 1000px;
+}
+
+.dog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 800px;
+    width: 650px;
+    flex-direction: column;
+    color: white;
+}
+
+.dog:hover {
+    
+    animation: floatdog 2s ease-in-out infinite alternate;
+    background-color: rgb(163, 150, 150);
+    box-shadow: 0 0 10px rgb(255, 0, 255),
+                0 0 10px 10px;  
+}
+
+@keyframes floatdog {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.cat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 800px;
+    width: 650px;
+    flex-direction: column;
+    color: white;
+}
+
+.cat:hover {
+    
+    animation: floatcat 2s ease-in-out infinite alternate;
+    background-color: rgb(163, 150, 150);
+    box-shadow: 0 0 10px rgb(255, 0, 255),
+                0 0 10px 10px; 
+    
+}
+
+#myface {
+    height: 100px;
+    width: auto;
+}
+
+@keyframes floatcat {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 800px;
+    width: 650px;
+    flex-direction: column;
+    color: white;
+}
+
+.quote:hover {
+    
+    animation: floatquote 2s ease-in-out infinite alternate;
+    background-color: rgb(163, 150, 150);
+    box-shadow: 0 0 10px rgb(255, 0, 255),
+                0 0 10px 10px;  
+    
+}
+
+@keyframes floatquote {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.box {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(22, 22, 22, 0.479);
+    border-radius: 30px;
+}
+
+.content {
+    background-color: white;
+    border-radius: 30px;
+    height: 400px;
+    width: 400px;
+    top: 50px; 
+    left: 50px;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    margin-top: 30px;
+    background-color: #bebab0a6;
+    border-radius: 100%;
+    height: 90px;
+    width: 90px;
+}
+
+body {
+    font-family: 'Courier New'; 
+    background-image: url('pixel-bg.gif');
+    background-size: cover;
+    height: 1400px;
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    margin-top: 40px;
+    font-family:  Honk sans-serif;
+}   
+@font-face {
+    font-family: Honk sans-serif;
+    src: url('Honk-Regular-VariableFont_MORF,SHLN.ttf') format('truetype');
+}
+h2 {
+    font-family:  Honk sans-serif;
+    font-size: 45px;
+}   
+@font-face {
+    font-family: Honk sans-serif;
+    src: url('Honk-Regular-VariableFont_MORF,SHLN.ttf') format('truetype');
+}
+h3 {
+    color: black;
+}
+.hallo {
+    font-family:  Honk sans-serif;
+    font-size: 90px;
+}   
+@font-face {
+    font-family: Honk sans-serif;
+    src: url('Honk-Regular-VariableFont_MORF,SHLN.ttf') format('truetype');
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    
+}
+#dogButton {
+    background-image: url('pngegg.png');
+    background-size: cover;
+}
+
+#dogButton:hover{
+    background-color: violet;
+    box-shadow: 0 0 10px violet,
+                0 0 10px 10px;
+}
+
+#catButton {
+    background-image: url(cat-paw.png);
+    background-size: cover;
+}
+
+#catButton:hover{
+    background-color: violet;
+    box-shadow: 0 0 10px violet,
+                0 0 10px 10px;
+}
+
+#quoteButton {
+    background-image: url(quote.png);
+    background-size: cover;
+}
+
+#quoteButton:hover{
+    background-color: violet;
+    box-shadow: 0 0 10px violet,
+                0 0 10px 10px;
+}
+
+#dogImg {               
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    top: 50px;
+    animation: fade 1s ease-in-out;
+    
+}
+@keyframes fade{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#catImg {               
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    top: 50px;
+    animation: fade 1s ease-in-out;
+    
+}
+
+@keyframes fade{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text {
+    font-family: Protest Riot sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    margin-right: 20px;
+    margin-left: 20px;
+    animation: text_fade 1s ease-in;
+    overflow: auto;
+}
+
+#getRandomQuote {
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: Protest Riot sans-serif;
+    src: url('ProtestRiot-Regular.ttf') format('truetype');
+}
+
+@keyframes text_fade{
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+
+@keyframes auth_fade{
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+
+.logoutBtn {
+    position: absolute;
+    right: 100px;
+    border-radius: 20px;
+    width: 8%;
+    height: 70px;
+    top: 50%;
+    bottom: 50%;
+    font-family:  Honk sans-serif;
+    font-size: 50px;
+    background: transparent;
+    backdrop-filter: blur(50px);
+}   
+@font-face {
+    font-family: Honk sans-serif;
+    src: url('Honk-Regular-VariableFont_MORF,SHLN.ttf') format('truetype');
+}
+
+.logoutBtn a {
+    text-decoration: none;
+}
+
+.logoutBtn:hover{
+    background-color: violet;
+    box-shadow: 0 0 10px violet,
+                0 0 10px 10px;
+}
